@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/class1.css">
+</head>
+
+<body style="background-color: lightslategray; font-size: 24px; box-sizing: border-box;">
+    <h1>Java測試總成頁面</h1>
+    <ul class="list">
+        <li class="innerli">有沒有</li>
+        <li>測試點</li>
+    </ul>
+    <div data-target id="target" class="target">選我01</div>
+    <div data-target class="target">選我02</div>
+    <button>新增你好世界</button>
+    <form>
+        <input name="user" type="input" required>
+        <input type="submit" value="獲取資料">
+    </form>
+    <div style="margin: 24px auto; width: 300px; text-align: center; background-color: teal;">
+        <div id="numCount" style="color: whitesmoke;font-size: 40px;padding-top: 12px;">0</div>
+        <!-- 目前數字 -->
+        <ul style="display: flex; justify-content: space-around; list-style: none; padding: 12px 0 ;">
+            <li><button id="addBtn" style="padding: 8px;">+1</button></li>
+            <!-- 按按鈕 +1 -->
+            <li><button id="resetBtn" style="padding: 8px;">Reset</button></li>
+            <!-- 按按鈕重設為 0 -->
+            <li><button id="discountBtn" style="padding: 8px;">-1</button></li>
+            <!-- 按按鈕 -1 -->
+        </ul>
+        <form id="formGetNum" style="padding: 12px 0;">
+            <input type="number" min="0" name="counterMultiplier" placeholder="請輸入計數器要乘多少倍" required style="padding: 4px 0;">
+            <input type="submit" value="提交倍數" style="padding: 2px 0;">
+        </form>
+    </div>
+    <div>
+        <h4>手風琴</h4>
+        <ul>
+            <li style="list-style: none;">
+                <div class="according-header">
+                    <span>Section1</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="according-content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptas?</div>
+            </li>
+            <li style="list-style: none;">
+                <div class="according-header">
+                    <span>Section2</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="according-content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptas?</div>
+            </li>   
+            <li style="list-style: none; ">
+                <div class="according-header">
+                    <span>Section3</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="according-content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, voluptas?</div>
+            </li>                       
+        </ul> 
+    </div>
+    <div>
+        <h4>頁籤</h4>
+        <div class="page-form">
+            <ul class="page-nav">
+                <li class="page-header">London</li>
+                <li class="page-header">Paris</li>
+                <li class="page-header">Tokyo</li>
+            </ul>
+            <div class="page-body">
+                <h5>London</h5>
+                <p>London is the capital city of England.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h4>代辦事項</h4>
+        <div class="todo-top">
+            <div>TODO-LIST清單</div>
+            <form class="todo-form">
+                <input type="text" name="todoInput" placeholder="請輸入事項" required>
+                <input type="submit" value="提交">
+            </form>
+            <div class="todoLists">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="/js/exsample1.js"></script>
+</body>
+
+</html>

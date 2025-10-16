@@ -1,0 +1,81 @@
+body{
+    box-sizing: border-box;
+    ;
+}
+.according-header:hover {
+    background-color: rgb(212, 74, 15) !important;
+    color: wheat;
+}
+
+.according-header {
+    background-color: lightsalmon;
+    width: 60vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.according-content {
+    font-size: 18px;
+    background-color: beige;
+    width: 60vw;
+    padding: 0px 12px;
+    max-height: 0;
+    overflow: hidden;
+}
+.according-content.open {
+    max-height: 90px;
+    padding: 8px 12px;    
+    transition: max-height 1s ease-out;
+}
+.plus{
+    font-size: 24px;
+    font-weight: bold;
+}
+.page-nav{
+    display: flex;
+    padding: 0 !important;
+    margin: 0;
+}
+.page-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.page-header{
+    width: calc(80vw / 3);
+    list-style: none;
+    padding: 8px 0;
+    background-color: lightpink;
+    cursor: pointer;
+    text-align: center;
+}
+.page-header:hover{
+    background-color: salmon;
+}
+.page-body{
+    width: 100%;
+    background-color: bisque;
+    padding: 0 16px;
+    p{
+        font-size: 16px;
+    }
+}
+.todo-top{
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 400px;
+    background-color: lightskyblue;
+    padding: 24px;
+}
+.d-none{
+    display: none;
+}
+.todo-item{
+    font-size: 16px;
+}
